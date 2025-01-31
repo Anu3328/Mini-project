@@ -33,5 +33,5 @@ The **Recipe Web Application** is a web-based platform designed to help users ex
 ### 📌 Installation & Setup
 #### 1️⃣ Clone the repository
 ```sh
-git clone <repository-url>
+git clone <https://github.com/Anu3328/Mini-project/blob/main/README.md>
 cd recipe-web-app
