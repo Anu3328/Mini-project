@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ce9ba4ff-abd1-4e4e-9c86-20cbd12939ac)# 🍽️ Recipe Web Application
+
 
 ## 📌 Project Overview
 The **Recipe Web Application** is a web-based platform designed to help users explore, share, and manage recipes. It provides an interactive interface for searching and viewing a variety of recipes, making cooking more accessible and enjoyable.
