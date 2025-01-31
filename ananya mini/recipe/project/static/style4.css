@@ -1,0 +1,355 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width:90%;
+    margin: 0  auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 95px;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 23px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/*
+.add {
+    width: 495px;
+    height: 627px;
+    background-color: white;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+h1 {
+    padding-top: 10px;
+    padding-left: 159px;
+}
+p {
+    padding-bottom: 7px;
+    padding-top: 20px;
+    font-size: 21px;
+}
+.input-box input {
+    height: 36px;
+    width: 90%;
+    padding-left: 7px;
+    border-radius: 10px;
+}
+.input-box {
+    padding-left: 21px;
+}
+.img p {
+    padding-left: 23px;
+}
+.img input {
+    padding-left: 22px;
+    height: 26px;
+    font-size: 19px;
+    text-align: center;
+}
+.input-box textarea {
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+button {
+    position: relative;
+    top: 20px;
+    left: 164px;
+    height: 34px;
+    width: 30%;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffd1ff;
+    color: black;
+    border: 2px solid black;
+}
+button:hover {
+    background-color: darkgreen;
+}
+.back {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+} */
+ /* --new-- */
+/* Reset some default styling */
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.back {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: 44%;
+    margin-top: 21px;
+} 
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.add h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.input-box p {
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 1em;
+}
+
+.input-box textarea {
+    height: 100px;
+}
+
+.img input[type="file"] {
+    width: 100%;
+    color: #333;
+    font-size: 19px;
+    padding-top: 13px;
+}
+
+button {
+    background: #af4261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 28%;
+    margin-top: 26px;
+}
+
+button:hover {
+    background: #f3ec78;
+    color: #af4261;
+}
+.add p {
+    text-align: left;
+    font-size: 20px;
+}
+ */
+/* Add Recipe Form */
+.admin {
+    background-image: url(images/adminbg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.back {
+    /* background-color: #edf1f5; Softer background */
+    padding: 40px 0;
+    background: url(images/adminbg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.add {
+    background-color: rgba(237, 241, 245, 0.85);
+    border-radius: 8px;
+    border: 2px solid rgba(135, 134, 134, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.add p{
+    text-align: left;
+}
+.add input[type="file"] {
+    position: relative;
+    right: 153px;
+    top: 10px;
+}
+.add h1 {
+    color: #3b5998;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+ .input-box input[type="text"], 
+ .input-box textarea, 
+ .input-box input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(135, 134, 134, 0.856);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #2c4376;
+}
+/* Manage Recipes Section */
+.recipes {
+    padding: 50px 20px;
+}
+.in {
+    overflow: auto;
+    height: 280px;
+}
+.ins {
+    overflow: auto;
+    height: 280px;
+}
+
+/* Exclude heading from grid */
+.recipes h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Recipes */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+/* Styling for individual recipe items */
+.recipe {
+    /* background-color: #fff; */
+    background-color: rgba(222, 244, 196, 0.592);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Ensures content doesn't overflow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretches content to fill available space */
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 1300px; /* Fixed height for each grid item */
+}
+.recipe:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe h2 {
+    font-size: 24px;
+    color: #3b5998;
+    margin-bottom: 10px;
+}
+
+.recipe p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    object-fit: cover; /* Ensures the image is cropped and retains aspect ratio */
+    border-radius: 4px;
+    margin-top: 10px;
+}
+/* Edit Form and Delete Button */
+.edit-form, .delete-form {
+    margin-top: 20px;
+}
+
+.edit-form textarea, 
+.edit-form input[type="text"], 
+.edit-form input[type="file"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2c4376;
+}
+button[type="submit"].del {
+    position: relative;
+    left: 153px;
+    top: 22px;
+}
+button[type="submit"].up {
+    position:relative;
+    left: 153px;
+    top: 17px;
+}

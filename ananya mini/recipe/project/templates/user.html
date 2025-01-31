@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Style for the dropdown suggestions */
+        .search-dropdown {
+            position: absolute;
+            background-color: rgb(247, 7, 7);
+            border: 1px solid #ccc;
+            width: 200px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        .search-dropdown div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-dropdown div:hover {
+            background-color: #2254ea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/l2.png') }}" alt="Logo" height="85px" width="300px">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user') }}">Home</a></li>
+                    <li><a href="{{ url_for('userform') }}">View Recipes</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>                    
+                    <li><a href="{{ url_for('login') }}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-section">
+            <h1>Manage Your Recipes!</h1>
+            <!-- Search Box -->
+            <form class="search-box" id="search-form">
+                <input type="text" id="search-input" placeholder="Search recipe">
+                <div id="search-results" class="search-dropdown"></div>
+            </form>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $('#search-input').on('input', function() {
+                let query = $(this).val();
+                
+                if (query.length >= 1) {
+                    $.ajax({
+                        url: "{{ url_for('search_ajax') }}",
+                        type: 'GET',
+                        data: {'query': query},
+                        success: function(data) {
+                            let dropdown = $('#search-results');
+                            dropdown.empty();  // Clear previous results
+                            
+                            if (data.length > 0) {
+                                data.forEach(function(recipe) {
+                                    // Add recipe name for linking
+                                    dropdown.append(`<div class="dropdown-item" data-name="${recipe.name}">${recipe.name}</div>`);
+                                });
+                            } else {
+                                dropdown.append(`<div>No recipes found</div>`);
+                            }
+                        }
+                    });
+                } else {
+                    $('#search-results').empty();  // Clear if the input length is less than 1
+                }
+            });
+    
+            // Select a recipe from the dropdown and redirect to details page by name
+            $(document).on('click', '.dropdown-item', function() {
+                let selectedRecipeName = $(this).data('name');
+                // Encode the recipe name to handle spaces and special characters
+                window.location.href = `/recipe/${encodeURIComponent(selectedRecipeName)}`;
+            });
+        });
+    </script>
+    
+    <!-- Millets -->
+    <section class="millets">
+        <div class="title">
+            <h1>Millets</h1>
+        </div>
+        <div class="m-section">
+            <div class="m-card">
+                <img src="{{ url_for('static', filename='images/ragi.webp') }}" alt="Ragi roti">
+                <h2>Ragi Roti</h2>
+                <a href="{{ url_for('recipe_page', name='Ragi Roti') }}">View Recipe</a>
+            </div>
+            
+            <div class="m-card">
+                <img src="{{ url_for('static', filename='images/pan.webp') }}" alt="millet pancake">
+                <h2>Millet Pancake</h2>
+                <a href="{{ url_for('recipe_page', name='Millet Pancakes') }}">View Recipe</a>
+            </div>
+            
+            <div class="m-card">
+                <img src="{{ url_for('static', filename='images/pulao.jpg') }}" alt="Foxtail Millet Pulao">
+                <h2>Foxtail Millet Pulao</h2>
+                <a href="{{ url_for('recipe_page', name='Foxtail Millet Pulao') }}">View Recipe</a>
+            </div>
+            
+            <div class="m-card">
+                <img src="{{ url_for('static', filename='images/lemon.jpg') }}" alt="Lemon Millet">
+                <h2>Lemon Millet</h2>
+                <a href="{{ url_for('recipe_page', name='Lemon Millet') }}">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="categories">
+        <div class="title">
+            <h1>Protein Recipes</h1>
+        </div>
+        <div class="cat-section">
+            <div class="cat-card">
+                <img src="{{ url_for('static', filename='images/t.jpg') }}" alt="Turkey and Black Bean Chili">
+                <h2>Turkey and Black Bean Chili</h2>
+                <a href="{{ url_for('recipe_page', name='Turkey and Black Bean Chili') }}">View Recipe</a>
+            </div>
+            <div class="cat-card">
+                <img src="{{ url_for('static', filename='images/bean.webp') }}" alt="Baked Beans">
+                <h2>Homemade Baked Beans</h2>
+                <a href="{{ url_for('recipe_page', name='Homemade Baked Beans') }}">View Recipe</a>
+            </div>
+            <div class="cat-card">
+                <img src="{{ url_for('static', filename='images/len.jpg') }}" alt="Lentil Soup with Spinach and Feta">
+                <h2>Lentil Soup with Spinach and Feta</h2>
+                <a href="{{ url_for('recipe_page', name='Lentil Soup with Spinach and Feta') }}">View Recipe</a>
+            </div>
+            <div class="cat-card">
+                <img src="{{ url_for('static', filename='images/gc.jpg') }}" alt="Grilled Chicken Breast with Avocado Salsa">
+                <h2>Grilled Chicken Breast with Avocado Salsa</h2>
+                <a href="{{ url_for('recipe_page', name='Grilled Chicken Breast with Avocado Salsa') }}">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leafy Recipes Section -->
+    <section class="leafy">
+        <div class="title">
+            <h1>Leafy Recipes</h1>
+        </div>
+        <div class="l-section">
+            <div class="l-card">
+                <img src="{{ url_for('static', filename='images/sp.jpg') }}" alt="Saag Paneer">
+                <h2>Saag Paneer</h2>
+                <a href="{{ url_for('recipe_page', name='Saag Paneer') }}">View Recipe</a>
+            </div>
+            <div class="l-card">
+                <img src="{{ url_for('static', filename='images/ws.jpg') }}" alt="Wilted Spinach and Garlic Shrimp Pasta">
+                <h2>Wilted Spinach and Garlic Shrimp Pasta</h2>
+                <a href="{{ url_for('recipe_page', name='Wilted Spinach and Garlic Shrimp Pasta') }}">View Recipe</a>
+            </div>
+            <div class="l-card">
+                <img src="{{ url_for('static', filename='images/br.jpg') }}" alt="Braised Red Cabbage with Apples">
+                <h2>Braised Red Cabbage with Apples</h2>
+                <a href="{{ url_for('recipe_page', name='Braised Red Cabbage with Apples') }}">View Recipe</a>
+            </div>
+            <div class="l-card">
+                <img src="{{ url_for('static', filename='images/spinach.jpg') }}" alt="Spinach and Feta Stuffed Chicken Breasts">
+                <h2>Spinach and Feta Stuffed Chicken Breasts</h2>
+                <a href="{{ url_for('recipe_page', name='Spinach and Feta Stuffed Chicken Breasts') }}">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salad Recipes Section -->
+    <section class="salad">
+        <div class="title">
+            <h1>Healthy Salads</h1>
+        </div>
+        <div class="s-section">
+            <div class="s-card">
+                <img src="{{ url_for('static', filename='images/sss.jpg') }}" alt="Spinach and Strawberry Salad">
+                <h2>Spinach and Strawberry Salad</h2>
+                <a href="{{ url_for('recipe_page', name='Spinach and Strawberry Salad') }}">View Recipe</a>
+            </div>
+            <div class="s-card">
+                <img src="{{ url_for('static', filename='images/kcs.jpg') }}" alt="Kale Caesar Salad">
+                <h2>Kale Caesar Salad</h2>
+                <a href="{{ url_for('recipe_page', name='Kale Caesar Salad') }}">View Recipe</a>
+            </div>
+            <div class="s-card">
+                <img src="{{ url_for('static', filename='images/corn.jpg') }}" alt="corn Salad">
+                <h2>Corn Salad</h2>
+                <a href="{{ url_for('recipe_page', name='Corn Salad') }}">View Recipe</a>
+            </div>
+            <div class="s-card">
+                <img src="{{ url_for('static', filename='images/cs.jpg') }}" alt="Chickpea Salad">
+                <h2>Chickpea Salad</h2>
+                <a href="{{ url_for('recipe_page', name='Chickpea Salad') }}">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick & Easy Recipes Section -->
+    <section class="easy">
+        <div class="title">
+            <h1>Quick & Easy</h1>
+        </div>
+        <div class="e-section">
+            <div class="e-card">
+                <img src="{{ url_for('static', filename='images/at.jpg') }}" alt="Avocado Toast">
+                <h2>Avocado Toast</h2>
+                <a href="{{ url_for('recipe_page', name='Avocado Toast') }}">View Recipe</a>
+            </div>
+            <div class="e-card">
+                <img src="{{ url_for('static', filename='images/oo.jpeg') }}" alt="Overnight Oats">
+                <h2>Overnight Oats</h2>
+                <a href="{{ url_for('recipe_page', name='Overnight Oats') }}">View Recipe</a>
+            </div>
+            <div class="e-card">
+                <img src="{{ url_for('static', filename='images/tc.jpg') }}" alt="Tacos">
+                <h2>Tacos</h2>
+                <a href="{{ url_for('recipe_page', name='Tacos') }}">View Recipe</a>
+            </div>
+            <div class="e-card">
+                <img src="{{ url_for('static', filename='images/g.jpg') }}" alt="Greek Yogurt with Berries and Granola">
+                <h2>Greek Yogurt with Berries and Granola</h2>
+                <a href="{{ url_for('recipe_page', name='Greek Yogurt with Berries and Granola') }}">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

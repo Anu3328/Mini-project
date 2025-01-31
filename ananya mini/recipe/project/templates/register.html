@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <script type="text/javascript">
+    function validateRegister(){
+      var name=document.f2.username.value;
+      var email=document.f2.email.value;
+      var password=document.f2.password.value;
+      var role=document.f2.role.value;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(!email.match(emailPattern)) {
+            alert('Please enter a valid email address.');
+          return false;
+      }
+   
+      if (password.length < 6) {
+            alert('Password must be at least 6 characters long.');
+          return false;
+      }
+      if (role === 'admin') {
+            const confirmAdmin = confirm('Registered as an admin. Do you want to proceed?');
+            if (!confirmAdmin) {
+              return false; // Prevent form submission
+            }
+      } else {
+            alert('Registered as a user.');
+        }
+      alert('Registration Successful!');
+      return true;
+    }
+  </script>  
+</head>
+<body>
+  <div class="wrapper">
+    <form name="f2" method="POST" onsubmit="return validateRegister()">
+      <h1>Register</h1>
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="input-box1">
+        <select name="role">
+            <option value="">Select Role</option>
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="register-link">
+        <p>Already have an account? <a href="{{url_for('login')}}">Login</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

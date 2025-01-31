@@ -1,0 +1,721 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width:90%;
+    margin: 0  auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 95px;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 23px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+ nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(images/r2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    text-align: center;
+}
+.hero-section {
+    padding: 160px 0;
+    font-size: 33px;
+    font-weight: 500px;
+}
+.search-box  {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box input {
+    width: 30%;
+    padding: 6px;
+    border-radius: 14px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+.search-box button {
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* category */
+/* .recipes {
+    padding: 30px;
+}
+.recipes h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.recipe-section {
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 10px;
+}
+.recipe-card {
+    background-color: white;
+    margin: 30px 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.recipe-card h2{
+    font-size: 22px;
+    padding: 15px;
+}
+.recipe-card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.categories {
+    padding: 4px;
+}
+.categories h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.category-section {
+    width:90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 10px;
+}
+.cat-card {
+    background-color: white;
+    margin: 30px 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+.cat-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cat-card h2{
+    font-size: 22px;
+    padding: 15px;
+}
+.cat-card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+*/
+/* Container for the recipe cards */
+.recipe-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+.recipe-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 362px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.recipe-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.recipe-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.recipe-card h2 {
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.recipe-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card a:hover {
+    background-color: #0056b3;
+}
+.recipes h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: 186px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+/* category */
+.cat-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+.cat-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 368px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.cat-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.cat-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.cat-card h2 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.cat-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.cat-card a:hover {
+    background-color: #0056b3;
+}
+.categories h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: 186px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+/*leafy*/
+.l-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+.l-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 368px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.l-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.l-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.l-card h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.l-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.l-card a:hover {
+    background-color: #0056b3;
+}
+.leafy h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: 186px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+/* millet */
+.s-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+.s-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 362px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.s-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.s-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.s-card h2 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.s-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.s-card a:hover {
+    background-color: #0056b3;
+}
+.salad h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: 186px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+/* easy */
+.e-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+.e-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 362px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.e-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.e-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.e-card h2 {
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.e-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.e-card a:hover {
+    background-color: #0056b3;
+}
+.easy h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: -40px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+.recipe-card:hover {
+    transform: scale(1.2);
+}
+.cat-card:hover {
+    transform: scale(1.2);
+}
+.l-card:hover {
+    transform: scale(1.2);
+}
+.s-card:hover {
+    transform: scale(1.2);
+}
+.e-card:hover {
+    transform: scale(1.2);
+}
+/* about page */
+.about-us {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid rgb(43, 33, 33);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 628px;
+    position: relative;
+    left: 302px;
+    border-radius: 18px;
+}
+
+.about-us h1 {
+	color: #333;
+	margin-top: 0;
+}
+
+.about-us p {
+	margin-bottom: 13px;
+    font-size: 18px;
+}
+
+.about-us img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+footer {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+ul li {
+    font-size: 19px;
+    padding-top: 10px;
+}
+ul {
+    padding-left: 17px;
+}
+.about-us h2 {
+    padding-top: 11px;
+}
+.ab {
+    background: url(images/about.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* end of about page */
+.m-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 32px;
+    overflow-x: auto;
+    /* margin-top: 16px; */
+    margin: -12px 0;
+    padding-top: 0px;
+}
+
+/* Individual recipe card styling */
+
+.millets{
+    display: flex;
+    flex-direction: column;
+}
+.m-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 368px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.m-card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+}
+
+/* Content container to ensure consistent height */
+.m-card .content {
+    flex: 1; /* Takes up remaining space in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between the title and link */
+    padding: 16px;
+}
+
+/* Title styling */
+.m-card h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+.m-card a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the link to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.m-card a:hover {
+    background-color: #0056b3;
+}
+.millets h1 {
+    padding-top: 31px;
+    padding-left: 22px;
+    position: relative;
+    bottom: 21px;
+    font-size: 43px;
+}
+.title a{
+    text-decoration: none;
+    position: relative;
+    left: 1277px;
+    top: 186px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.title a:hover{
+    background-color: #7ef7f7; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+.m-card:hover {
+    transform: scale(1.2);
+}
+
+
+
+

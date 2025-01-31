@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Healthy Recipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/l2.png') }}" alt="Your Logo" height="85px" width="300px">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user') }}">Home</a></li>
+                    <li><a href="{{ url_for('userform') }}">View Recipes</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('login') }}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="ab">
+            <section class="about-us">
+                <p>Welcome to Simply Recipes, your ultimate resource for nourishing recipes that are both delicious and simple to prepare. Our mission is to make healthy eating easy and enjoyable by offering a variety of wholesome recipes featuring millets, protein-rich dishes, leafy greens, vibrant salads, and quick & easy meals that fit into your busy lifestyle.</p>
+                <p>
+                    Simply Recipes is created with the belief that food can be both nutritious and flavorful. In a world full of fast food and unhealthy options, we aim to inspire you with wholesome meals that are easy to make and packed with ingredients.
+                </p>
+                <h2>What We Offer</h2>
+                <ul>
+                    <li><b>Millet Recipes:</b> Discover the versatility of this ancient grain with our range of hearty, fiber-rich dishes.</li>
+                    <li><b>Protein Recipes:</b>From plant-based proteins to lean meats, find meals that support your health and fitness goals.</li>
+                    <li><b>Leafy Recipes:</b> Packed with essential nutrients, our leafy green dishes are as delicious as they are nutritious.</li>
+                    <li><b>Healthy Salads:</b>Fresh, vibrant, and full of flavor, our salads are perfect for a light meal or a side dish.</li>
+                    <li><b>Quick & Easy Recipes:</b> For those days when you’re short on time but still want a healthy meal, we’ve got quick options that don’t compromise on taste or nutrition.</li>
+                </ul>
+    
+                <h2>Our Philosophy</h2>
+                <ul>
+                    <li><b>Whole Ingredients:</b> Our recipes focus on real, unprocessed foods that nourish your body.</li>
+                    <li><b>Simplicity:</b> Healthy eating should be accessible to everyone, which is why we create recipes that are easy to follow and quick to prepare.</li>
+                    <li><b>Balanced Nutrition:</b> Each dish is crafted to offer a balanced combination of macronutrients and essential vitamins.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthy Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>

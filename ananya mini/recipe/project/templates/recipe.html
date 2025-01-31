@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe['title'] }} Recipe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recipe.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/l2.png') }}" alt="Your logo" height="85px" width="300px">
+
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user') }}">Home</a></li>
+                    <li><a href="{{ url_for('userform') }}">View Recipes</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('login') }}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1>{{ recipe['name'] }}</h1>
+    <div class="recipe">
+        <img src="{{ url_for('static', filename='images/pen3.webp') }}" alt="{{ recipe['title'] }}">
+        <h3>Duration Time: {{ recipe['total_time'] }}</h3>
+        <h3>Ingredients:</h3>
+        <ul>
+            {% for ingredient in recipe['ingredients'] %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Instructions:</h3>
+        <ul>
+            {% for instruction in recipe['instructions'] %}
+                <li>{{ instruction }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

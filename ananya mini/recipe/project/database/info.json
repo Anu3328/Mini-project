@@ -1,0 +1,522 @@
+[
+    {
+      "recipe": {
+        "title": "Turkey and Black Bean Chili",
+        "total_time": "45 minutes",
+        "ingredients": [
+          "1 lb ground turkey",
+          "1 can (15 oz) black beans, drained and rinsed",
+          "1 can (15 oz) diced tomatoes",
+          "1 small onion, chopped",
+          "1 bell pepper, chopped",
+          "2 cloves garlic, minced",
+          "1 tablespoon chili powder",
+          "1 teaspoon cumin",
+          "1/2 teaspoon paprika",
+          "1/4 teaspoon cayenne pepper (optional, for heat)",
+          "Salt and pepper to taste",
+          "1 cup chicken broth",
+          "2 tablespoons olive oil",
+          "Fresh cilantro (optional, for garnish)",
+          "Shredded cheese, sour cream, or avocado (optional toppings)"
+        ],
+        "instructions": [
+          "Heat olive oil in a large pot over medium heat. Add chopped onion and bell pepper, cooking for about 3-4 minutes until softened.",
+          "Add minced garlic and cook for another 1 minute until fragrant.",
+          "Add the ground turkey to the pot and cook until browned, breaking it apart as it cooks.",
+          "Stir in the chili powder, cumin, paprika, cayenne pepper (if using), salt, and pepper. Cook for about 1 minute to let the spices blend.",
+          "Add the black beans, diced tomatoes, and chicken broth. Bring the mixture to a simmer.",
+          "Reduce heat to low and cook for about 20 minutes, stirring occasionally.",
+          "Adjust seasoning with additional salt and pepper if needed.",
+          "Serve hot, garnished with cilantro and your choice of toppings like shredded cheese, sour cream, or avocado."
+        ]
+      }
+    },
+    {
+      "recipe": {
+        "title": "Lentil Soup with Spinach and Feta",
+        "total_time": "40 minutes",
+        "ingredients": [
+          "1 cup dried lentils, rinsed",
+          "6 cups vegetable broth",
+          "1 onion, chopped",
+          "2 carrots, diced",
+          "2 cloves garlic, minced",
+          "1 teaspoon cumin",
+          "1/2 teaspoon turmeric",
+          "Salt and pepper to taste",
+          "4 cups fresh spinach",
+          "1/2 cup crumbled feta cheese",
+          "2 tablespoons olive oil",
+          "Juice of 1 lemon (optional, for brightness)"
+        ],
+        "instructions": [
+          "Heat olive oil in a large pot over medium heat. Add the chopped onion and carrots, cooking for 5-6 minutes until softened.",
+          "Add the minced garlic, cumin, turmeric, salt, and pepper. Cook for another minute until fragrant.",
+          "Pour in the vegetable broth and add the rinsed lentils. Bring the mixture to a boil, then reduce the heat and let it simmer for 25-30 minutes, or until the lentils are tender.",
+          "Stir in the fresh spinach and cook for another 2-3 minutes until wilted.",
+          "Remove the pot from heat and stir in the lemon juice if using.",
+          "Ladle the soup into bowls and top with crumbled feta cheese.",
+          "Serve hot and enjoy!"
+        ]
+      }
+    },
+    {
+      "recipe": {
+        "title": "Grilled Chicken Breast with Avocado Salsa",
+        "total_time": "30 minutes",
+        "ingredients": [
+          "4 boneless, skinless chicken breasts",
+          "2 tablespoons olive oil",
+          "1 teaspoon garlic powder",
+          "1 teaspoon paprika",
+          "1/2 teaspoon cumin",
+          "Salt and pepper to taste",
+          "2 ripe avocados, diced",
+          "1/4 cup red onion, finely chopped",
+          "1 jalapeño, seeded and diced (optional, for heat)",
+          "Juice of 1 lime",
+          "2 tablespoons fresh cilantro, chopped",
+          "Salt to taste (for salsa)"
+        ],
+        "instructions": [
+          "In a small bowl, mix olive oil, garlic powder, paprika, cumin, salt, and pepper.",
+          "Rub the chicken breasts with the spice mixture and let them sit for 10 minutes.",
+          "Preheat the grill to medium-high heat. Grill the chicken breasts for 6-7 minutes per side, or until fully cooked and the internal temperature reaches 165°F (75°C).",
+          "While the chicken is grilling, prepare the avocado salsa by combining the diced avocados, red onion, jalapeño (if using), lime juice, cilantro, and salt in a bowl. Gently mix to combine.",
+          "Once the chicken is done, remove it from the grill and let it rest for a few minutes.",
+          "Serve the grilled chicken topped with the avocado salsa and enjoy!"
+        ]
+      }
+    },
+    {
+      "recipe": {
+        "title": "Saag Paneer",
+        "total_time": "40 minutes",
+        "ingredients": [
+          "300g paneer, cubed",
+          "500g fresh spinach (or 1 package frozen spinach, thawed)",
+          "1 onion, finely chopped",
+          "2 tomatoes, chopped",
+          "2 cloves garlic, minced",
+          "1 tablespoon ginger, grated",
+          "1 teaspoon cumin seeds",
+          "1 teaspoon garam masala",
+          "1/2 teaspoon turmeric",
+          "1/2 teaspoon chili powder",
+          "1/2 cup heavy cream or yogurt",
+          "2 tablespoons ghee or oil",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Heat 1 tablespoon of ghee or oil in a pan and fry the paneer cubes until golden brown. Set them aside.",
+          "In the same pan, add another tablespoon of ghee or oil. Add cumin seeds and let them sizzle for a few seconds.",
+          "Add the chopped onion and cook for 4-5 minutes until softened.",
+          "Stir in the garlic, ginger, turmeric, chili powder, and garam masala. Cook for another minute until fragrant.",
+          "Add the chopped tomatoes and cook until they soften and break down, about 5 minutes.",
+          "Add the spinach to the pan. If using fresh spinach, cook until wilted. If using frozen spinach, cook until heated through.",
+          "Transfer the mixture to a blender and blend until smooth, or use an immersion blender in the pan.",
+          "Return the spinach puree to the pan and stir in the cream or yogurt. Add salt to taste.",
+          "Gently fold in the fried paneer and simmer for 5 minutes.",
+          "Serve hot with naan or rice and enjoy!"
+        ]
+      }
+    },
+    {
+      "recipe": {
+        "title": "Foxtail Millet Pulao",
+        "total_time": "40 minutes",
+        "ingredients": [
+          "1 cup foxtail millet, rinsed and soaked for 15-20 minutes",
+          "2 tablespoons vegetable oil or ghee",
+          "1 teaspoon cumin seeds",
+          "1 bay leaf",
+          "1 small cinnamon stick",
+          "2-3 cloves",
+          "2 green cardamom pods",
+          "1 medium onion, thinly sliced",
+          "1 teaspoon ginger-garlic paste",
+          "2 slit green chilies",
+          "1 cup mixed vegetables, chopped (carrot, peas, beans, etc.)",
+          "1/4 teaspoon turmeric powder",
+          "1/2 teaspoon garam masala",
+          "Salt to taste",
+          "2 cups water",
+          "Fresh coriander leaves, chopped, for garnish"
+        ],
+        "instructions": [
+          "Heat oil or ghee in a large pan. Add cumin seeds, bay leaf, cinnamon stick, cloves, and green cardamom. Sauté for a few seconds until fragrant.",
+          "Add sliced onion and sauté until golden brown. Then add ginger-garlic paste and slit green chilies, and sauté for another 1-2 minutes.",
+          "Add the chopped mixed vegetables and turmeric powder. Stir-fry for 3-4 minutes.",
+          "Drain the soaked foxtail millet and add it to the pan. Stir to combine with the vegetables and spices.",
+          "Add water, garam masala, and salt. Stir and bring to a boil.",
+          "Reduce heat to low, cover the pan with a lid, and let it simmer for 15-20 minutes until the millet is cooked and water is absorbed.",
+          "Once cooked, turn off the heat and let it rest for 5 minutes. Fluff the pulao with a fork.",
+          "Garnish with fresh coriander leaves and serve hot with yogurt or raita."
+        ]
+      }
+    },
+    {
+      "recipe": {
+        "title": "Lemon Millet",
+        "total_time": "25 minutes",
+        "ingredients": [
+          "1 cup foxtail millet, rinsed and soaked for 15-20 minutes",
+          "2 cups water",
+          "2 tablespoons lemon juice",
+          "1 tablespoon vegetable oil or ghee",
+          "1 teaspoon mustard seeds",
+          "1/2 teaspoon cumin seeds",
+          "1 teaspoon urad dal (split black gram)",
+          "1 teaspoon chana dal (split chickpeas)",
+          "1-2 slit green chilies",
+          "1/4 teaspoon turmeric powder",
+          "8-10 curry leaves",
+          "Salt to taste",
+          "Fresh coriander leaves, chopped, for garnish",
+          "2 tablespoons roasted peanuts"
+        ],
+        "instructions": [
+          "Cook the foxtail millet by adding it to 2 cups of water. Bring to a boil, then reduce the heat, cover, and simmer for 15 minutes until the millet is tender and the water is absorbed. Set aside to cool slightly.",
+          "Heat oil or ghee in a pan over medium heat. Add mustard seeds, cumin seeds, urad dal, and chana dal. Sauté until the seeds crackle and the dals turn golden brown.",
+          "Add the slit green chili, curry leaves, and turmeric powder. Sauté for 1 minute until fragrant.",
+          "Add the cooked millet to the pan along with salt and mix well to coat the millet with the spices.",
+          "Turn off the heat and stir in the lemon juice, adjusting to taste.",
+          "Garnish with roasted peanuts and fresh coriander leaves.",
+          "Serve hot with yogurt or as a light meal."
+        ]
+      }
+    },
+
+    {
+        "recipe": {
+          "title": "Wilted Spinach and Garlic Shrimp Pasta",
+          "total_time": "25 minutes",
+          "ingredients": [
+            "200g pasta (spaghetti, linguine, or your choice)",
+            "300g shrimp, peeled and deveined",
+            "4 cups fresh spinach",
+            "4 cloves garlic, minced",
+            "2 tablespoons olive oil",
+            "1/4 teaspoon red pepper flakes (optional, for heat)",
+            "1/4 cup grated Parmesan cheese",
+            "Juice of 1 lemon",
+            "Salt and pepper to taste"
+          ],
+          "instructions": [
+            "Cook the pasta according to package instructions. Drain and set aside.",
+            "In a large pan, heat olive oil over medium heat. Add the minced garlic and red pepper flakes (if using) and cook for 1 minute until fragrant.",
+            "Add the shrimp to the pan and cook for 2-3 minutes on each side until they turn pink and opaque. Remove the shrimp from the pan and set aside.",
+            "In the same pan, add the fresh spinach and cook for 2-3 minutes until wilted.",
+            "Return the shrimp to the pan and toss with the spinach. Add the cooked pasta, lemon juice, and Parmesan cheese.",
+            "Season with salt and pepper to taste. Toss everything together until well combined.",
+            "Serve hot and enjoy!"
+          ]
+        }
+    },
+    
+
+    {
+        "recipe": {
+          "title": "Braised Red Cabbage with Apples",
+          "total_time": "1 hour",
+          "ingredients": [
+            "1 medium red cabbage, thinly sliced",
+            "2 apples, peeled, cored, and thinly sliced",
+            "1 onion, thinly sliced",
+            "1/4 cup apple cider vinegar",
+            "2 tablespoons brown sugar",
+            "1/2 teaspoon ground cinnamon",
+            "1/4 teaspoon ground cloves",
+            "Salt and pepper to taste",
+            "2 tablespoons butter or olive oil"
+          ],
+          "instructions": [
+            "Heat butter or olive oil in a large pot over medium heat. Add the sliced onion and cook for 5-6 minutes until softened.",
+            "Add the sliced cabbage and apples to the pot, stirring to combine.",
+            "Stir in the apple cider vinegar, brown sugar, cinnamon, cloves, salt, and pepper.",
+            "Reduce the heat to low, cover, and simmer for 40-45 minutes, stirring occasionally, until the cabbage is tender and the flavors are well combined.",
+            "Adjust seasoning if needed and serve warm."
+          ]
+        }
+    },
+
+    
+    {
+        "recipe": {
+          "name": "Spinach and Feta Stuffed Chicken Breasts",
+          "total_time": "40 minutes",
+          "ingredients": [
+            "4 boneless, skinless chicken breasts",
+            "2 cups fresh spinach, chopped",
+            "1 cup crumbled feta cheese",
+            "1/4 cup grated Parmesan cheese",
+            "2 cloves garlic, minced",
+            "1 tablespoon olive oil",
+            "1 teaspoon dried oregano",
+            "1 teaspoon dried basil",
+            "Salt, to taste",
+            "Pepper, to taste",
+            "Toothpicks or kitchen twine, as needed"
+          ],
+          "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Heat olive oil in a skillet over medium heat. Add minced garlic and cook for about 1 minute until fragrant. Add chopped spinach and cook until wilted, about 2-3 minutes. Remove from heat and let it cool slightly. Stir in crumbled feta cheese and grated Parmesan cheese. Season with dried oregano, dried basil, salt, and pepper.",
+            "Place chicken breasts between two pieces of plastic wrap or parchment paper. Pound them with a meat mallet or rolling pin until they are an even thickness (about 1/2 inch thick). Season both sides with salt and pepper.",
+            "Spoon the spinach and feta mixture onto one side of each chicken breast. Fold the chicken over the filling and secure with toothpicks or kitchen twine.",
+            "Heat a large ovenproof skillet over medium-high heat. Add a little olive oil and sear the chicken breasts for about 3-4 minutes on each side, until golden brown. Transfer the skillet to the preheated oven and bake for 20-25 minutes, or until the chicken is cooked through and the internal temperature reaches 165°F (74°C).",
+            "Remove the chicken from the oven and let it rest for a few minutes before removing the toothpicks or twine. Serve with your favorite sides or a fresh salad."
+          ]
+        }
+    },
+
+    {
+        "recipe": {
+          "name": "Spinach and Strawberry Salad",
+          "total_time": "15 minutes",
+          "ingredients": [
+            "4 cups fresh spinach leaves",
+            "1 cup strawberries, sliced",
+            "1/4 cup red onion, thinly sliced",
+            "1/2 cup feta cheese, crumbled",
+            "1/4 cup pecans or walnuts, toasted",
+            "1/4 cup balsamic vinaigrette",
+            "Salt, to taste",
+            "Pepper, to taste"
+          ],
+          "instructions": [
+            "In a large bowl, combine the fresh spinach leaves, sliced strawberries, and red onion.",
+            "Sprinkle the crumbled feta cheese and toasted pecans or walnuts over the salad.",
+            "Drizzle the balsamic vinaigrette over the salad and toss gently to combine.",
+            "Season with salt and pepper to taste.",
+            "Serve immediately and enjoy!"
+          ]
+        }
+    },
+
+    {
+        "recipe": {
+          "name": "Kale Caesar Salad",
+          "total_time": "20 minutes",
+          "ingredients": [
+            "6 cups kale leaves, stems removed and chopped",
+            "1 cup croutons",
+            "1/2 cup Parmesan cheese, shaved",
+            "1/2 cup Caesar dressing",
+            "1 tablespoon lemon juice",
+            "1 clove garlic, minced",
+            "Salt, to taste",
+            "Pepper, to taste"
+          ],
+          "instructions": [
+            "In a large bowl, combine the chopped kale leaves and minced garlic.",
+            "Add the Caesar dressing and lemon juice to the kale. Toss well to coat the kale evenly.",
+            "Add croutons and shaved Parmesan cheese on top of the salad.",
+            "Season with salt and pepper to taste.",
+            "Toss the salad gently to combine all ingredients and serve immediately."
+          ]
+        }
+    },
+
+    {
+        "recipe": {
+          "name": "Avocado Toast",
+          "total_time": "5 minutes",
+          "ingredients": [
+            "2 slices bread, toasted",
+            "1 ripe avocado, mashed",
+            "1 teaspoon lemon juice",
+            "Salt, to taste",
+            "Black pepper, to taste",
+            "Red pepper flakes, optional, for garnish"
+          ],
+          "instructions": [
+            "Toast the slices of bread until golden and crispy.",
+            "In a bowl, mash the avocado and mix in the lemon juice.",
+            "Spread the mashed avocado evenly on the toasted bread.",
+            "Season with salt and black pepper to taste.",
+            "Sprinkle red pepper flakes for an extra kick, if desired.",
+            "Serve immediately."
+          ]
+        }
+    },
+
+    {
+        "recipe": {
+          "name": "Overnight Oats",
+          "total_time": "8 hours (overnight)",
+          "ingredients": [
+            "1/2 cup rolled oats",
+            "1/2 cup milk or any dairy-free alternative",
+            "1 tablespoon chia seeds, optional",
+            "1-2 teaspoons honey or maple syrup, for sweetness, optional",
+            "1/4 teaspoon vanilla extract, optional",
+            "Toppings as desired, e.g., fresh fruits, nuts, or seeds"
+          ],
+          "instructions": [
+            "In a jar or bowl, combine the rolled oats, milk, chia seeds, honey or maple syrup, and vanilla extract.",
+            "Stir well to mix all the ingredients together.",
+            "Cover the jar or bowl with a lid or plastic wrap.",
+            "Refrigerate overnight, or for at least 8 hours.",
+            "In the morning, give the oats a stir and add your favorite toppings before serving."
+          ]
+        }
+    },
+
+    {
+        "recipe": {
+          "name": "Tacos",
+          "total_time": "20 minutes",
+          "ingredients": [
+            "8 taco shells or tortillas",
+            "1 pound ground beef or chicken, cooked and seasoned",
+            "1 packet taco seasoning or homemade seasoning",
+            "1 cup shredded lettuce",
+            "1 cup shredded cheese, cheddar or Mexican blend",
+            "1/2 cup diced tomatoes",
+            "1/4 cup sour cream, optional",
+            "1/4 cup salsa, optional",
+            "1/4 cup guacamole, optional"
+          ],
+          "instructions": [
+            "Cook the ground beef or chicken in a pan over medium heat, adding taco seasoning according to the packet instructions.",
+            "Warm the taco shells or tortillas in a pan or microwave.",
+            "Assemble the tacos by adding the cooked meat to the shells.",
+            "Top with shredded lettuce, cheese, diced tomatoes, and any optional toppings like sour cream, salsa, or guacamole.",
+            "Serve immediately and enjoy."
+          ]
+        }
+    },
+
+    {
+        "name": "Corn Salad",
+        "total_time": "20 minutes",
+        "ingredients": [
+          "3 cups corn kernels",
+          "1 cup cherry tomatoes, halved",
+          "1/2 cup red onion, finely chopped",
+          "1 cup cucumber, diced",
+          "1 avocado, diced",
+          "1/4 cup fresh cilantro, chopped",
+          "2 tablespoons lime juice",
+          "2 tablespoons olive oil",
+          "Salt, to taste",
+          "Black pepper, to taste"
+        ],
+        "instructions": [
+          "In a large bowl, combine the corn kernels, cherry tomatoes, red onion, cucumber, avocado, and fresh cilantro.",
+          "In a small bowl, whisk together lime juice, olive oil, salt, and pepper.",
+          "Pour the dressing over the salad and toss to combine.",
+          "Serve immediately or chill in the refrigerator before serving."
+        ]
+    },
+
+    {
+        "name": "Chickpea Salad",
+        "total_time": "15 minutes",
+        "ingredients": [
+          "1 can (15 oz) canned chickpeas, drained and rinsed",
+          "1 cup cucumber, diced",
+          "1 cup cherry tomatoes, halved",
+          "1/4 cup red onion, finely chopped",
+          "1/4 cup feta cheese, crumbled",
+          "1/4 cup fresh parsley, chopped",
+          "2 tablespoons olive oil",
+          "2 tablespoons lemon juice",
+          "Salt, to taste",
+          "Black pepper, to taste"
+        ],
+        "instructions": [
+          "In a large bowl, combine the chickpeas, cucumber, cherry tomatoes, red onion, feta cheese, and fresh parsley.",
+          "In a small bowl, whisk together olive oil, lemon juice, salt, and pepper.",
+          "Pour the dressing over the salad and toss to combine.",
+          "Serve immediately or chill in the refrigerator before serving."
+        ]
+    },
+
+    {
+        "name": "Homemade Baked Beans",
+        "total_time": "1 hour 30 minutes",
+        "ingredients": [
+          "1 pound dried navy beans, soaked overnight",
+          "4 slices bacon, chopped",
+          "1 medium onion, finely chopped",
+          "2 cloves garlic, minced",
+          "1/2 cup ketchup",
+          "1/4 cup brown sugar",
+          "2 tablespoons molasses",
+          "1 tablespoon Dijon mustard",
+          "1 tablespoon apple cider vinegar",
+          "1 tablespoon Worcestershire sauce",
+          "1 teaspoon salt",
+          "Black pepper, to taste",
+          "2 cups water"
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F (175°C).",
+          "Drain and rinse the soaked navy beans, then place them in a large pot and cover with water. Bring to a boil, then reduce heat and simmer for 45 minutes or until tender. Drain the beans and set aside.",
+          "In a large oven-safe skillet or Dutch oven, cook the chopped bacon over medium heat until crispy. Remove the bacon and set aside, leaving the bacon grease in the skillet.",
+          "Add the chopped onion to the skillet and sauté until softened, about 5 minutes. Add the minced garlic and cook for an additional 1-2 minutes.",
+          "Stir in the ketchup, brown sugar, molasses, Dijon mustard, apple cider vinegar, Worcestershire sauce, salt, and pepper. Add 2 cups of water and stir to combine.",
+          "Add the cooked beans and crispy bacon back to the skillet, stirring to coat the beans with the sauce.",
+          "Transfer the skillet to the preheated oven and bake uncovered for 45 minutes to 1 hour, until the beans are thickened and bubbly.",
+          "Remove from the oven and let cool slightly before serving."
+        ]
+    },
+
+    {
+        "name": "Ragi Roti",
+        "total_time": "30 minutes",
+        "ingredients": [
+          "1 cup ragi flour (finger millet flour)",
+          "1 small onion, finely chopped",
+          "1 green chili, finely chopped",
+          "2 tablespoons fresh coriander leaves, chopped",
+          "1/4 cup grated carrot",
+          "1/2 teaspoon cumin seeds",
+          "Salt, to taste",
+          "Water, as needed",
+          "Oil, for cooking"
+        ],
+        "instructions": [
+          "In a large mixing bowl, combine ragi flour, chopped onion, green chili, fresh coriander, grated carrot, cumin seeds, and salt.",
+          "Gradually add water to the mixture and knead to form a soft, pliable dough. The dough should be firm enough to roll but not too sticky.",
+          "Divide the dough into small balls and flatten each ball into a round roti using your palms or by rolling it out gently.",
+          "Heat a non-stick pan or tawa over medium heat. Grease it lightly with oil.",
+          "Place the flattened ragi roti on the heated tawa and cook for 2-3 minutes on each side, adding a little oil around the edges, until both sides are cooked and lightly browned.",
+          "Serve hot with chutney or yogurt."
+        ]
+    },
+
+    {
+        "name": "Millet Pancakes",
+        "total_time": "20 minutes",
+        "ingredients": [
+          "1 cup millet flour",
+          "1/2 cup all-purpose flour",
+          "1 teaspoon baking powder",
+          "1/2 teaspoon baking soda",
+          "1/4 teaspoon salt",
+          "1 tablespoon sugar",
+          "1 cup milk (or as needed)",
+          "1 egg",
+          "2 tablespoons melted butter",
+          "1 teaspoon vanilla extract",
+          "Oil or butter, for cooking"
+        ],
+        "instructions": [
+          "In a large mixing bowl, whisk together millet flour, all-purpose flour, baking powder, baking soda, salt, and sugar.",
+          "In a separate bowl, whisk the egg, milk, melted butter, and vanilla extract.",
+          "Add the wet ingredients to the dry ingredients and stir until just combined. If the batter is too thick, add more milk as needed to reach a pourable consistency.",
+          "Heat a non-stick pan or griddle over medium heat and lightly grease it with oil or butter.",
+          "Pour 1/4 cup of batter onto the pan for each pancake. Cook for 2-3 minutes until bubbles form on the surface, then flip and cook for another 1-2 minutes until golden brown.",
+          "Serve hot with syrup, honey, or fruit toppings."
+        ]
+    }
+
+
+  
+
+
+  ]
+  

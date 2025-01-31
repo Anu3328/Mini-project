@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/l2.png') }}" alt="Logo" height="85px" width="300px">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('user') }}">Home</a></li>
+                    <li><a href="{{ url_for('userform') }}">View Recipes</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>                    
+                    <li><a href="{{ url_for('login') }}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="recipes">
+        <h1>Recipe List</h1>
+        <div class="recipe-grid">
+            {% for recipe in recipes %}
+                <div class="recipe">
+                    <h2>{{ recipe.name }}</h2>
+                    <p class="t"><strong>Time:</strong> {{ recipe.total_time }}</p>
+                    <p class="in"><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+                    <p class="ins"><strong>Instructions:</strong> {{ recipe.instructions }}</p>
+                    {% if recipe.image_url %}
+                        <img src="{{ recipe.image_url }}" alt="{{ recipe.name }}">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+</body>
+</html>
